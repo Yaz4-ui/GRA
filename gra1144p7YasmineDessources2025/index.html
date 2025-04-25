@@ -15,6 +15,11 @@ body {
 header {
     background-color: #237561;
     height: 100px;
+    font-size: 89px;
+    color: rgba(255,255,255,1.00);
+    text-align: center;
+    right: 0px;
+    font-style: italic;
 }
 footer {
     font-size: 12px;
@@ -54,6 +59,8 @@ footer {
     border-radius: 10px 10px 0px 0px;
     background-color: rgba(255,255,255,0.80);
 }
+#Tabs2 div {
+}
 #Tabs1 li a {
     color: rgba(8,129,108,1.00);
 }
@@ -67,6 +74,22 @@ wrapper {
     width: 1366px;
     display: block;
 }
+#submit2 {
+    background-color: rgba(36,116,97,1.00);
+    color: rgba(255,255,255,1.00);
+}
+#submit3 {
+    background-color: rgba(36,116,97,1.00);
+    color: rgba(255,255,255,1.00);
+}
+#submit1 {
+    color: rgba(255,255,255,1.00);
+    background-color: rgba(36,116,97,1.00);
+}
+#submit4 {
+    color: rgba(255,255,255,1.00);
+    background-color: rgba(36,116,97,1.00);
+}
 </style>
 <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
@@ -76,7 +99,7 @@ wrapper {
 </head>
 
 <body>
-<header> </header>
+<header> Travelocity</header>
 <wrapper>
   <div id="Tabs1">
     <ul>
@@ -101,16 +124,41 @@ wrapper {
 		<input type="submit" class="submit">
     </div>
     <div id="tabs-2">
-      <p>Content 2</p>
+      <h2>Hotels </h2>
+      <input placeholder="Where to?">
+		<label> From </label>
+		<input type="date"> 
+		<label> To </label>
+		<input type="date"><label>  Number of travelers </label> <input type="number" max="8" min="1"><input type="submit" id="submit1">
     </div>
     <div id="tabs-3">
-      <p>Content 3</p>
+      <h2> Cars </h2>
+      <input placeholder="Pick up">
+      <input placeholder="Drop off">
+      <input type="date">
+      <label><input type="date" title="Pick up time"></label> Pick up time
+      <input type="time">
+      <label> Drop off time <input type="time"></label>
+      <input name="submit" type="submit" id="submit4" value="Submit">
     </div>
     <div id="tabs-4">
-      <p>Content 4</p>
+      <h2> Vacations </h2>
+      <input placeholder="Leaving from">
+      <input placeholder="Going to">
+      <input type="date">
+<label for="number">
+  
+  Number of travelers
+</label><input type="number">
+<input type="submit" name="submit2" id="submit2" value="Submit">
     </div>
     <div id="tabs-5">
-      <p>Content 5</p>
+      <h2>Cruises </h2>
+      <input placeholder="Going to">
+      <input type="date">
+      <label> Duration </label>
+      <input type="number">
+      <input type="submit" name="submit3" id="submit3" value="Submit">
     </div>
   </div>
 </wrapper>
